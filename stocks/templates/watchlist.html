@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+{% load custom_filters %}
+{% block title %}Watchlist{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="page-header">
+        <h2>My Watchlist</h2>
+        <p class="text-muted">Keep track of stocks you're interested in</p>
+    </div>
+    
+    {% if watchlist_items %}
+    <div class="table-responsive">
+        <table class="table table-striped modern-table">
+            <thead>
+                <tr>
+                    <th>Stock</th>
+                    <th>Current Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in watchlist_items %}
+                <tr>
+                    <td>
+                        <div class="stock-info">
+                            <strong>{{ item.stock_name }}</strong>
+                            <small class="text-muted d-block">{{ item.stock_symbol }}</small>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="price-display" id="{{ item.stock_symbol }}">Loading...</span>
+                    </td>
+                    <td>
+                        <div class="action-buttons">
+                            <a href="{% url 'remove_from_watchlist' item.stock_symbol %}" class="btn btn-danger btn-sm">
+                                Remove
+                            </a>
+                            <a href="{% url 'stocks' %}" class="btn btn-primary btn-sm">
+                                Trade
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% else %}
+    <div class="empty-state">
+        <div class="empty-icon">👁️</div>
+        <h3>Your watchlist is empty</h3>
+        <p>Add stocks to your watchlist from the Stocks page to monitor their performance.</p>
+        <a href="{% url 'stocks' %}" class="btn btn-primary">Browse Stocks</a>
+    </div>
+    {% endif %}
+</div>
+
+<style>
+.page-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.page-header h2 {
+    color: var(--gray-900);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.modern-table {
+    background: var(--white);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    border: none;
+}
+
+.modern-table thead th {
+    background: var(--gray-50);
+    border: none;
+    font-weight: 600;
+    color: var(--gray-700);
+    padding: 1rem;
+}
+
+.modern-table tbody td {
+    border: none;
+    padding: 1rem;
+    border-bottom: 1px solid var(--gray-100);
+}
+
+.modern-table tbody tr:hover {
+    background: var(--gray-50);
+}
+
+.stock-info strong {
+    color: var(--gray-900);
+}
+
+.price-display {
+    font-weight: 600;
+    color: var(--gray-900);
+    font-size: 1.1rem;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.action-buttons .btn {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+    border-radius: 0.375rem;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: var(--white);
+    border-radius: 1rem;
+    box-shadow: var(--shadow-md);
+}
+
+.empty-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.empty-state h3 {
+    color: var(--gray-900);
+    margin-bottom: 1rem;
+}
+
+.empty-state p {
+    color: var(--gray-600);
+    margin-bottom: 2rem;
+}
+</style>
+{% endblock %}
+
