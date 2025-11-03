@@ -7,6 +7,14 @@
     <div class="page-header">
         <h2>My Watchlist</h2>
         <p class="text-muted">Keep track of stocks you're interested in</p>
+        {% if total_items %}
+            <div class="refresh-controls mb-3">
+                <button id="refreshPrices" class="btn btn-success btn-sm">
+                    <i class="fas fa-sync-alt"></i> Refresh Prices
+                </button>
+                <small class="text-muted ms-2">Auto-refresh every 30 seconds</small>
+            </div>
+        {% endif %}
     </div>
     
     {% if watchlist_items %}
@@ -16,12 +24,15 @@
                 <tr>
                     <th>Stock</th>
                     <th>Current Price</th>
+                    <th>Change</th>
+                    <th>Volume</th>
+                    <th>Sector</th>
                     <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
                 {% for item in watchlist_items %}
-                <tr>
+                <tr data-symbol="{{ item.stock_symbol }}">
                     <td>
                         <div class="stock-info">
                             <strong>{{ item.stock_name }}</strong>
@@ -29,15 +40,39 @@
                         </div>
                     </td>
                     <td>
-                        <span class="price-display" id="{{ item.stock_symbol }}">Loading...</span>
+                        <div class="price-container">
+                            <span class="price-display" data-symbol="{{ item.stock_symbol }}">
+                                ${{ item.current_price|floatformat:2 }}
+                            </span>
+                            <small class="text-muted d-block source-info">{{ item.source }}</small>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="change-container">
+                            {% if item.day_change >= 0 %}
+                                <span class="change-positive">
+                                    +${{ item.day_change|floatformat:2 }} (+{{ item.day_change_percent|floatformat:2 }}%)
+                                </span>
+                            {% else %}
+                                <span class="change-negative">
+                                    ${{ item.day_change|floatformat:2 }} ({{ item.day_change_percent|floatformat:2 }}%)
+                                </span>
+                            {% endif %}
+                        </div>
+                    </td>
+                    <td>
+                        <span class="volume-display">{{ item.volume|default:"N/A" }}</span>
+                    </td>
+                    <td>
+                        <span class="sector-display">{{ item.sector|default:"N/A" }}</span>
                     </td>
                     <td>
                         <div class="action-buttons">
                             <a href="{% url 'remove_from_watchlist' item.stock_symbol %}" class="btn btn-danger btn-sm">
-                                Remove
+                                <i class="fas fa-trash"></i> Remove
                             </a>
                             <a href="{% url 'stocks' %}" class="btn btn-primary btn-sm">
-                                Trade
+                                <i class="fas fa-chart-line"></i> Trade
                             </a>
                         </div>
                     </td>
@@ -137,6 +172,143 @@
     color: var(--gray-600);
     margin-bottom: 2rem;
 }
+
+.change-positive {
+    color: #10b981;
+    font-weight: 600;
+}
+
+.change-negative {
+    color: #ef4444;
+    font-weight: 600;
+}
+
+.price-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.source-info {
+    font-size: 0.75rem;
+    opacity: 0.7;
+}
+
+.refresh-controls {
+    text-align: center;
+}
+
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.updated {
+    animation: highlight 2s ease-in-out;
+}
+
+@keyframes highlight {
+    0% { background-color: #fef3c7; }
+    100% { background-color: transparent; }
+}
+
+#refreshPrices:disabled {
+    opacity: 0.6;
+}
+
+.fas {
+    margin-right: 0.25rem;
+}
 </style>
+
+<script>
+let refreshInterval;
+
+// Function to refresh all watchlist prices
+async function refreshWatchlistPrices() {
+    const button = document.getElementById('refreshPrices');
+    if (button) {
+        button.disabled = true;
+        button.innerHTML = '<i class="fas fa-sync-alt fa-spin"></i> Updating...';
+    }
+    
+    try {
+        const response = await fetch('{% url "update_watchlist_prices_api" %}');
+        const data = await response.json();
+        
+        if (data.success) {
+            // Update prices in the UI
+            data.prices.forEach(stock => {
+                const row = document.querySelector(`tr[data-symbol="${stock.symbol}"]`);
+                if (row) {
+                    // Update price
+                    const priceElement = row.querySelector('.price-display');
+                    if (priceElement) {
+                        priceElement.textContent = `$${stock.current_price.toFixed(2)}`;
+                    }
+                    
+                    // Update change
+                    const changeContainer = row.querySelector('.change-container');
+                    if (changeContainer) {
+                        const changeClass = stock.day_change >= 0 ? 'change-positive' : 'change-negative';
+                        const changeSymbol = stock.day_change >= 0 ? '+' : '';
+                        changeContainer.innerHTML = `
+                            <span class="${changeClass}">
+                                ${changeSymbol}$${stock.day_change.toFixed(2)} (${changeSymbol}${stock.day_change_percent.toFixed(2)}%)
+                            </span>
+                        `;
+                    }
+                    
+                    // Update volume
+                    const volumeElement = row.querySelector('.volume-display');
+                    if (volumeElement) {
+                        volumeElement.textContent = stock.volume.toLocaleString();
+                    }
+                    
+                    // Add highlight animation
+                    row.classList.add('updated');
+                    setTimeout(() => row.classList.remove('updated'), 2000);
+                }
+            });
+            
+            // Update source info
+            document.querySelectorAll('.source-info').forEach(el => {
+                el.textContent = 'Live Data';
+            });
+            
+            console.log(`Updated ${data.updated_count} stocks successfully`);
+        } else {
+            console.error('Failed to update prices:', data.error);
+        }
+    } catch (error) {
+        console.error('Error updating prices:', error);
+    } finally {
+        if (button) {
+            button.disabled = false;
+            button.innerHTML = '<i class="fas fa-sync-alt"></i> Refresh Prices';
+        }
+    }
+}
+
+// Manual refresh button
+document.addEventListener('DOMContentLoaded', function() {
+    const refreshButton = document.getElementById('refreshPrices');
+    if (refreshButton) {
+        refreshButton.addEventListener('click', refreshWatchlistPrices);
+        
+        // Auto-refresh every 30 seconds
+        refreshInterval = setInterval(refreshWatchlistPrices, 30000);
+        
+        // Initial load after 2 seconds
+        setTimeout(refreshWatchlistPrices, 2000);
+    }
+});
+
+// Clear interval when page is unloaded
+window.addEventListener('beforeunload', function() {
+    if (refreshInterval) {
+        clearInterval(refreshInterval);
+    }
+});
+</script>
 {% endblock %}
 

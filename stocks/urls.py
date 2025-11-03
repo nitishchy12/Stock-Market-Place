@@ -18,15 +18,17 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import path
 from .views import (
-    index, getData, stocks, loginView, logoutView, register,
+    index, populate_stock_data, stocks, loginView, logoutView, register,
     buy, sell, transaction_history, portfolio_dashboard,
-    watchlist_view, add_to_watchlist, remove_from_watchlist
+    watchlist_view, add_to_watchlist, remove_from_watchlist,
+    get_stock_price_api, update_watchlist_prices_api
 )
+from .health_views import health_check, readiness_check, liveness_check
 
 urlpatterns = [
     path('', index, name='index'),
     path('stocks/', stocks, name='stocks'),
-    path('data/', getData, name='data'),
+    path('admin/populate-stocks/', populate_stock_data, name='populate_stock_data'),
     path('login/', loginView, name='login'),
     path('logout/', logoutView, name='logout'),
     path('register/', register, name='register'),
@@ -37,6 +39,15 @@ urlpatterns = [
     path('watchlist/', watchlist_view, name='watchlist_view'),
     path('add_to_watchlist/<str:stock_symbol>/', add_to_watchlist, name='add_to_watchlist'),
     path('remove_from_watchlist/<str:stock_symbol>/', remove_from_watchlist, name='remove_from_watchlist'),
+    
+    # API endpoints for real-time data
+    path('api/stock/<str:symbol>/price/', get_stock_price_api, name='stock_price_api'),
+    path('api/watchlist/update-prices/', update_watchlist_prices_api, name='update_watchlist_prices_api'),
+    
+    # Health check endpoints
+    path('api/health/', health_check, name='health_check'),
+    path('api/ready/', readiness_check, name='readiness_check'),
+    path('api/alive/', liveness_check, name='liveness_check'),
 ]
 
 if settings.DEBUG:  # Serve media files only in development
