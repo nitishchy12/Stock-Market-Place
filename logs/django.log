@@ -1125,3 +1125,309 @@ INFO 2025-11-03 22:42:15,327 basehttp 7268 20368 "GET / HTTP/1.1" 200 8730
 INFO 2025-11-03 22:42:17,853 basehttp 7268 20368 "GET /stocks/ HTTP/1.1" 200 32075
 INFO 2025-11-03 22:42:20,743 basehttp 7268 20368 "GET /watchlist/ HTTP/1.1" 200 7445
 INFO 2025-11-03 22:42:22,632 basehttp 7268 20368 "GET /stocks/ HTTP/1.1" 200 32075
+INFO 2025-11-03 22:50:26,950 autoreload 14792 11956 Watching for file changes with StatReloader
+INFO 2025-11-03 22:50:32,804 basehttp 14792 18576 "GET / HTTP/1.1" 200 8730
+INFO 2025-11-03 22:50:38,134 basehttp 14792 18576 "GET /watchlist/ HTTP/1.1" 200 7445
+INFO 2025-11-03 22:50:41,135 services 14792 18576 Cached data for META
+INFO 2025-11-03 22:50:41,159 basehttp 14792 18576 - Broken pipe from ('127.0.0.1', 56072)
+INFO 2025-11-03 22:50:41,398 services 14792 2820 Cached data for META
+INFO 2025-11-03 22:50:41,414 basehttp 14792 2820 "GET /portfolio_dashboard/ HTTP/1.1" 200 5714
+INFO 2025-11-03 22:50:43,167 basehttp 14792 2820 "GET /transaction_history/ HTTP/1.1" 200 5351
+INFO 2025-11-03 22:50:49,662 services 14792 2820 Retrieved cached data for META
+INFO 2025-11-03 22:50:49,683 basehttp 14792 2820 "GET /portfolio_dashboard/ HTTP/1.1" 200 5714
+INFO 2025-11-03 22:50:50,254 services 14792 2820 Retrieved cached data for META
+INFO 2025-11-03 22:50:50,274 basehttp 14792 2820 "GET /portfolio_dashboard/ HTTP/1.1" 200 5714
+INFO 2025-11-03 22:50:53,942 services 14792 24288 Retrieved cached data for META
+INFO 2025-11-03 22:50:53,957 basehttp 14792 24288 "GET /portfolio_dashboard/ HTTP/1.1" 200 5714
+INFO 2025-11-03 22:50:55,564 basehttp 14792 24288 "GET /watchlist/ HTTP/1.1" 200 7445
+INFO 2025-11-03 22:50:57,193 basehttp 14792 24288 "GET /transaction_history/ HTTP/1.1" 200 5351
+INFO 2025-11-03 22:50:58,925 basehttp 14792 24288 "GET /stocks/ HTTP/1.1" 200 32075
+INFO 2025-11-03 23:28:50,501 basehttp 14792 17536 "GET / HTTP/1.1" 200 8730
+INFO 2025-11-03 23:29:06,670 basehttp 14792 17536 "GET /stocks/ HTTP/1.1" 200 32075
+INFO 2025-11-03 23:29:18,641 basehttp 14792 8840 "GET /transaction_history/ HTTP/1.1" 200 5351
+INFO 2025-11-03 23:29:30,346 services 14792 17308 Cached data for META
+INFO 2025-11-03 23:29:30,349 services 14792 7304 Cached data for META
+INFO 2025-11-03 23:29:30,372 basehttp 14792 17308 - Broken pipe from ('127.0.0.1', 57924)
+INFO 2025-11-03 23:29:30,382 basehttp 14792 7304 "GET /portfolio_dashboard/ HTTP/1.1" 200 5713
+INFO 2025-11-03 23:29:32,999 basehttp 14792 7304 "GET /watchlist/ HTTP/1.1" 200 7445
+INFO 2025-11-03 23:29:35,587 services 14792 7304 Retrieved cached data for META
+INFO 2025-11-03 23:29:35,602 basehttp 14792 7304 "GET /portfolio_dashboard/ HTTP/1.1" 200 5713
+INFO 2025-11-04 13:41:32,301 autoreload 28304 13808 Watching for file changes with StatReloader
+INFO 2025-11-04 13:41:49,923 basehttp 28304 16008 "GET / HTTP/1.1" 302 0
+INFO 2025-11-04 13:41:50,821 basehttp 28304 16008 "GET /login/?next=/ HTTP/1.1" 200 2262
+WARNING 2025-11-04 13:41:51,161 log 28304 16008 Not Found: /favicon.ico
+WARNING 2025-11-04 13:41:51,162 basehttp 28304 16008 "GET /favicon.ico HTTP/1.1" 404 5647
+INFO 2025-11-04 13:41:54,081 basehttp 28304 16008 "POST /login/?next=/ HTTP/1.1" 302 0
+INFO 2025-11-04 13:41:54,147 basehttp 28304 16008 "GET / HTTP/1.1" 200 8730
+INFO 2025-11-04 13:41:57,539 basehttp 28304 11168 "GET /stocks/ HTTP/1.1" 200 32075
+INFO 2025-11-04 13:42:12,618 services 28304 11168 Cached data for MSFT
+INFO 2025-11-04 13:42:12,642 views 28304 11168 User stock_market bought 4 shares of MSFT at $517.030029296875
+INFO 2025-11-04 13:42:12,645 basehttp 28304 11168 "POST /buy/4/ HTTP/1.1" 302 0
+INFO 2025-11-04 13:42:12,669 basehttp 28304 11168 "GET / HTTP/1.1" 200 9514
+INFO 2025-11-04 13:42:20,031 basehttp 28304 23704 "GET /transaction_history/ HTTP/1.1" 200 6288
+INFO 2025-11-04 13:42:21,910 services 28304 23704 Retrieved cached data for MSFT
+INFO 2025-11-04 13:42:23,925 services 28304 23704 Cached data for META
+INFO 2025-11-04 13:42:23,967 basehttp 28304 23704 "GET /portfolio_dashboard/ HTTP/1.1" 200 6476
+INFO 2025-11-04 13:42:26,069 services 28304 28220 Retrieved cached data for MSFT
+INFO 2025-11-04 13:42:26,082 services 28304 28220 Retrieved cached data for META
+INFO 2025-11-04 13:42:26,100 basehttp 28304 28220 "GET /portfolio_dashboard/ HTTP/1.1" 200 6476
+INFO 2025-11-04 13:42:30,216 basehttp 28304 28220 "GET /stocks/ HTTP/1.1" 200 32075
+INFO 2025-11-14 11:28:07,213 autoreload 21208 21448 Watching for file changes with StatReloader
+INFO 2025-11-14 11:30:15,164 basehttp 21208 19800 "GET / HTTP/1.1" 302 0
+INFO 2025-11-14 11:30:18,634 basehttp 21208 19800 "GET /login/?next=/ HTTP/1.1" 200 2262
+INFO 2025-11-14 11:30:23,175 basehttp 21208 15464 "GET /static/form.css HTTP/1.1" 200 1313
+INFO 2025-11-14 11:30:23,175 basehttp 21208 10128 "GET /static/styles.css HTTP/1.1" 200 1146
+INFO 2025-11-14 11:30:23,175 basehttp 21208 23172 "GET /static/market.css HTTP/1.1" 200 1392
+INFO 2025-11-14 11:30:23,257 basehttp 21208 19800 "GET /static/modern-styles.css HTTP/1.1" 200 9996
+WARNING 2025-11-14 11:30:28,507 log 21208 19800 Not Found: /favicon.ico
+WARNING 2025-11-14 11:30:28,508 basehttp 21208 19800 "GET /favicon.ico HTTP/1.1" 404 5647
+INFO 2025-11-14 11:30:36,207 basehttp 21208 11720 "POST /login/?next=/ HTTP/1.1" 302 0
+INFO 2025-11-14 11:30:36,708 basehttp 21208 11720 "GET / HTTP/1.1" 200 9514
+INFO 2025-11-14 11:30:48,612 basehttp 21208 15276 "GET /transaction_history/ HTTP/1.1" 200 6288
+INFO 2025-11-14 11:30:48,862 basehttp 21208 15276 "GET /transaction_history/ HTTP/1.1" 200 6288
+INFO 2025-11-14 11:30:49,259 basehttp 21208 15276 "GET /transaction_history/ HTTP/1.1" 200 6288
+INFO 2025-11-14 11:31:10,905 basehttp 21208 20520 "GET /watchlist/ HTTP/1.1" 200 7445
+INFO 2025-11-14 11:31:22,117 basehttp 21208 19532 "GET /transaction_history/ HTTP/1.1" 200 6288
+INFO 2025-11-14 11:31:38,319 services 21208 21776 Cached data for MSFT
+INFO 2025-11-14 11:31:38,323 services 21208 1568 Cached data for MSFT
+INFO 2025-11-14 11:31:38,331 services 21208 18888 Cached data for MSFT
+INFO 2025-11-14 11:31:38,344 services 21208 15760 Cached data for MSFT
+INFO 2025-11-14 11:31:39,168 services 21208 15760 Cached data for META
+INFO 2025-11-14 11:31:39,311 services 21208 21776 Cached data for META
+INFO 2025-11-14 11:31:39,348 services 21208 1568 Cached data for META
+INFO 2025-11-14 11:31:39,378 services 21208 18888 Cached data for META
+INFO 2025-11-14 11:31:39,532 basehttp 21208 15760 "GET /portfolio_dashboard/ HTTP/1.1" 200 6476
+INFO 2025-11-14 11:31:39,588 basehttp 21208 1568 - Broken pipe from ('127.0.0.1', 53584)
+INFO 2025-11-14 11:31:39,589 basehttp 21208 18888 - Broken pipe from ('127.0.0.1', 60908)
+INFO 2025-11-14 11:31:39,589 basehttp 21208 21776 - Broken pipe from ('127.0.0.1', 51671)
+INFO 2025-11-14 11:31:56,217 basehttp 21208 18232 "GET /watchlist/ HTTP/1.1" 200 7445
+INFO 2025-11-14 11:31:59,636 basehttp 21208 18232 "GET /stocks/ HTTP/1.1" 200 32075
+INFO 2025-11-14 11:32:03,402 basehttp 21208 18628 "GET /add_to_watchlist/GOOGL/ HTTP/1.1" 302 0
+INFO 2025-11-14 11:32:03,478 basehttp 21208 18628 "GET /stocks/ HTTP/1.1" 200 32075
+INFO 2025-11-14 11:32:07,322 services 21208 18628 Cached data for GOOGL
+INFO 2025-11-14 11:32:07,452 basehttp 21208 18628 "GET /watchlist/ HTTP/1.1" 200 9816
+INFO 2025-11-14 11:32:09,677 services 21208 18628 Retrieved cached data for GOOGL
+INFO 2025-11-14 11:32:09,978 basehttp 21208 18628 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 11:32:17,900 basehttp 21208 3304 "GET /stocks/ HTTP/1.1" 200 32075
+INFO 2025-11-14 11:52:47,081 autoreload 13316 4120 Watching for file changes with StatReloader
+INFO 2025-11-14 11:52:59,782 basehttp 13316 17484 "GET / HTTP/1.1" 302 0
+INFO 2025-11-14 11:53:00,911 basehttp 13316 17484 "GET /login/?next=/ HTTP/1.1" 200 2262
+WARNING 2025-11-14 11:53:01,318 log 13316 17484 Not Found: /favicon.ico
+WARNING 2025-11-14 11:53:01,320 basehttp 13316 17484 "GET /favicon.ico HTTP/1.1" 404 5647
+INFO 2025-11-14 11:53:05,077 basehttp 13316 17484 "POST /login/?next=/ HTTP/1.1" 302 0
+INFO 2025-11-14 11:53:05,191 basehttp 13316 17484 "GET / HTTP/1.1" 200 9514
+INFO 2025-11-14 11:53:19,047 services 13316 17504 Cached data for GOOGL
+INFO 2025-11-14 11:53:19,196 basehttp 13316 17504 "GET /watchlist/ HTTP/1.1" 200 9816
+INFO 2025-11-14 11:53:21,257 services 13316 19412 Retrieved cached data for GOOGL
+INFO 2025-11-14 11:53:21,273 basehttp 13316 19412 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 11:53:49,389 services 13316 8000 Retrieved cached data for GOOGL
+INFO 2025-11-14 11:53:51,207 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 11:54:19,270 services 13316 8000 Retrieved cached data for GOOGL
+INFO 2025-11-14 11:54:19,754 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 11:54:49,249 services 13316 8000 Retrieved cached data for GOOGL
+INFO 2025-11-14 11:54:49,268 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 11:55:19,242 services 13316 8000 Retrieved cached data for GOOGL
+INFO 2025-11-14 11:55:19,258 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 11:55:49,240 services 13316 8000 Retrieved cached data for GOOGL
+INFO 2025-11-14 11:55:49,257 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 11:56:19,241 services 13316 8000 Retrieved cached data for GOOGL
+INFO 2025-11-14 11:56:19,259 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 11:56:49,253 services 13316 8000 Retrieved cached data for GOOGL
+INFO 2025-11-14 11:56:49,270 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 11:57:19,252 services 13316 8000 Retrieved cached data for GOOGL
+INFO 2025-11-14 11:57:19,271 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 11:57:49,503 services 13316 8000 Retrieved cached data for GOOGL
+INFO 2025-11-14 11:57:49,753 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 11:58:34,569 services 13316 8000 Cached data for GOOGL
+INFO 2025-11-14 11:58:37,070 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 11:58:49,546 services 13316 8000 Retrieved cached data for GOOGL
+INFO 2025-11-14 11:58:49,830 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 11:59:19,539 services 13316 8000 Retrieved cached data for GOOGL
+INFO 2025-11-14 11:59:20,341 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 11:59:51,499 services 13316 8000 Retrieved cached data for GOOGL
+INFO 2025-11-14 11:59:51,546 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 12:00:51,478 services 13316 8000 Retrieved cached data for GOOGL
+INFO 2025-11-14 12:00:51,497 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 12:01:51,500 services 13316 8000 Retrieved cached data for GOOGL
+INFO 2025-11-14 12:01:51,520 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 12:02:51,464 services 13316 8000 Retrieved cached data for GOOGL
+INFO 2025-11-14 12:02:51,484 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 12:03:52,130 services 13316 8000 Cached data for GOOGL
+INFO 2025-11-14 12:03:52,146 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 12:04:51,463 services 13316 8000 Retrieved cached data for GOOGL
+INFO 2025-11-14 12:04:51,480 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 12:05:51,460 services 13316 8000 Retrieved cached data for GOOGL
+INFO 2025-11-14 12:05:51,479 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 12:06:51,477 services 13316 8000 Retrieved cached data for GOOGL
+INFO 2025-11-14 12:06:51,526 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 12:07:51,468 services 13316 8000 Retrieved cached data for GOOGL
+INFO 2025-11-14 12:07:51,486 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 12:08:51,463 services 13316 8000 Retrieved cached data for GOOGL
+INFO 2025-11-14 12:08:51,486 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 12:09:52,145 services 13316 8000 Cached data for GOOGL
+INFO 2025-11-14 12:09:52,165 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 12:10:51,462 services 13316 8000 Retrieved cached data for GOOGL
+INFO 2025-11-14 12:10:51,483 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 12:11:51,466 services 13316 8000 Retrieved cached data for GOOGL
+INFO 2025-11-14 12:11:51,489 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 12:12:51,463 services 13316 8000 Retrieved cached data for GOOGL
+INFO 2025-11-14 12:12:51,481 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 12:13:51,465 services 13316 8000 Retrieved cached data for GOOGL
+INFO 2025-11-14 12:13:51,484 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 12:14:51,465 services 13316 8000 Retrieved cached data for GOOGL
+INFO 2025-11-14 12:14:51,486 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 12:15:52,922 services 13316 8000 Cached data for GOOGL
+INFO 2025-11-14 12:15:52,952 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 12:16:51,463 services 13316 8000 Retrieved cached data for GOOGL
+INFO 2025-11-14 12:16:51,475 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 12:17:51,456 services 13316 8000 Retrieved cached data for GOOGL
+INFO 2025-11-14 12:17:51,469 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 12:18:51,899 services 13316 8000 Retrieved cached data for GOOGL
+INFO 2025-11-14 12:18:51,915 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 12:19:51,453 services 13316 8000 Retrieved cached data for GOOGL
+INFO 2025-11-14 12:19:51,469 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 12:20:51,470 services 13316 8000 Retrieved cached data for GOOGL
+INFO 2025-11-14 12:20:51,488 basehttp 13316 8000 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 12:21:52,361 services 13316 22384 Cached data for GOOGL
+INFO 2025-11-14 12:21:52,374 basehttp 13316 22384 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 12:22:51,509 services 13316 22384 Retrieved cached data for GOOGL
+INFO 2025-11-14 12:22:51,534 basehttp 13316 22384 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 12:23:51,475 services 13316 22340 Retrieved cached data for GOOGL
+INFO 2025-11-14 12:23:51,487 basehttp 13316 22340 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 12:24:51,453 services 13316 22340 Retrieved cached data for GOOGL
+INFO 2025-11-14 12:24:51,468 basehttp 13316 22340 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 12:25:51,463 services 13316 22340 Retrieved cached data for GOOGL
+INFO 2025-11-14 12:25:51,475 basehttp 13316 22340 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 12:26:51,458 services 13316 22340 Retrieved cached data for GOOGL
+INFO 2025-11-14 12:26:51,473 basehttp 13316 22340 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 13:52:56,325 autoreload 16232 21704 Watching for file changes with StatReloader
+INFO 2025-11-14 13:53:07,354 basehttp 16232 18772 "GET / HTTP/1.1" 302 0
+INFO 2025-11-14 13:53:07,594 basehttp 16232 18772 "GET /login/?next=/ HTTP/1.1" 200 2262
+WARNING 2025-11-14 13:53:08,216 log 16232 18772 Not Found: /favicon.ico
+WARNING 2025-11-14 13:53:08,218 basehttp 16232 18772 "GET /favicon.ico HTTP/1.1" 404 5647
+INFO 2025-11-14 13:53:10,953 basehttp 16232 18772 "POST /login/?next=/ HTTP/1.1" 302 0
+INFO 2025-11-14 13:53:11,003 basehttp 16232 18772 "GET / HTTP/1.1" 200 9514
+INFO 2025-11-14 13:53:22,316 services 16232 18772 Cached data for GOOGL
+INFO 2025-11-14 13:53:22,334 basehttp 16232 18772 "GET /watchlist/ HTTP/1.1" 200 9816
+INFO 2025-11-14 13:53:24,416 services 16232 18772 Retrieved cached data for GOOGL
+INFO 2025-11-14 13:53:24,429 basehttp 16232 18772 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 13:53:52,458 services 16232 18772 Retrieved cached data for GOOGL
+INFO 2025-11-14 13:53:52,473 basehttp 16232 18772 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 13:54:22,447 services 16232 22444 Retrieved cached data for GOOGL
+INFO 2025-11-14 13:54:22,463 basehttp 16232 22444 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 13:54:52,449 services 16232 22444 Retrieved cached data for GOOGL
+INFO 2025-11-14 13:54:52,465 basehttp 16232 22444 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 13:55:22,450 services 16232 22444 Retrieved cached data for GOOGL
+INFO 2025-11-14 13:55:22,462 basehttp 16232 22444 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 13:55:52,475 services 16232 22444 Retrieved cached data for GOOGL
+INFO 2025-11-14 13:55:52,491 basehttp 16232 22444 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 13:56:22,481 services 16232 22444 Retrieved cached data for GOOGL
+INFO 2025-11-14 13:56:22,524 basehttp 16232 22444 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 13:56:52,497 services 16232 22444 Retrieved cached data for GOOGL
+INFO 2025-11-14 13:56:52,524 basehttp 16232 22444 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 13:57:48,259 services 16232 22444 Retrieved cached data for GOOGL
+INFO 2025-11-14 13:57:48,365 basehttp 16232 22444 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 13:58:47,805 services 16232 22444 Cached data for GOOGL
+INFO 2025-11-14 13:58:47,863 basehttp 16232 22444 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 13:59:46,764 services 16232 22444 Retrieved cached data for GOOGL
+INFO 2025-11-14 13:59:46,843 basehttp 16232 22444 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 14:00:46,457 services 16232 22444 Retrieved cached data for GOOGL
+INFO 2025-11-14 14:00:46,704 basehttp 16232 22444 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 14:01:46,490 services 16232 22444 Retrieved cached data for GOOGL
+INFO 2025-11-14 14:01:46,532 basehttp 16232 22444 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 14:02:46,573 services 16232 22444 Retrieved cached data for GOOGL
+INFO 2025-11-14 14:02:46,605 basehttp 16232 22444 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 14:03:46,465 services 16232 22444 Retrieved cached data for GOOGL
+INFO 2025-11-14 14:03:46,494 basehttp 16232 22444 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 14:04:47,639 services 16232 22444 Cached data for GOOGL
+INFO 2025-11-14 14:04:47,674 basehttp 16232 22444 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 14:05:46,453 services 16232 22444 Retrieved cached data for GOOGL
+INFO 2025-11-14 14:05:46,468 basehttp 16232 22444 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 14:06:46,455 services 16232 22444 Retrieved cached data for GOOGL
+INFO 2025-11-14 14:06:46,475 basehttp 16232 22444 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 14:07:46,459 services 16232 22444 Retrieved cached data for GOOGL
+INFO 2025-11-14 14:07:46,480 basehttp 16232 22444 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 14:08:46,691 services 16232 22444 Retrieved cached data for GOOGL
+INFO 2025-11-14 14:08:46,749 basehttp 16232 22444 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 14:09:46,455 services 16232 22444 Retrieved cached data for GOOGL
+INFO 2025-11-14 14:09:46,470 basehttp 16232 22444 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:22:16,596 autoreload 14212 10412 Watching for file changes with StatReloader
+INFO 2025-11-14 15:22:37,063 basehttp 14212 16484 "GET / HTTP/1.1" 302 0
+INFO 2025-11-14 15:22:38,239 basehttp 14212 16484 "GET /login/?next=/ HTTP/1.1" 200 2262
+WARNING 2025-11-14 15:22:38,761 log 14212 16484 Not Found: /favicon.ico
+WARNING 2025-11-14 15:22:38,763 basehttp 14212 16484 "GET /favicon.ico HTTP/1.1" 404 5647
+INFO 2025-11-14 15:22:41,933 basehttp 14212 16484 "POST /login/?next=/ HTTP/1.1" 302 0
+INFO 2025-11-14 15:22:41,989 basehttp 14212 16484 "GET / HTTP/1.1" 200 9514
+INFO 2025-11-14 15:22:44,271 basehttp 14212 16484 "GET /stocks/ HTTP/1.1" 200 32075
+INFO 2025-11-14 15:22:46,026 basehttp 14212 16484 "GET /transaction_history/ HTTP/1.1" 200 6288
+INFO 2025-11-14 15:22:56,571 services 14212 13352 Cached data for MSFT
+INFO 2025-11-14 15:22:57,075 services 14212 13352 Cached data for META
+INFO 2025-11-14 15:22:57,102 basehttp 14212 13352 "GET /portfolio_dashboard/ HTTP/1.1" 200 6476
+INFO 2025-11-14 15:23:00,909 services 14212 13352 Cached data for GOOGL
+INFO 2025-11-14 15:23:00,928 basehttp 14212 13352 "GET /watchlist/ HTTP/1.1" 200 9816
+INFO 2025-11-14 15:23:03,007 services 14212 13352 Retrieved cached data for GOOGL
+INFO 2025-11-14 15:23:03,023 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:23:30,987 services 14212 13352 Retrieved cached data for GOOGL
+INFO 2025-11-14 15:23:31,002 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:24:00,987 services 14212 13352 Retrieved cached data for GOOGL
+INFO 2025-11-14 15:24:01,003 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:24:30,997 services 14212 13352 Retrieved cached data for GOOGL
+INFO 2025-11-14 15:24:31,011 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:25:00,997 services 14212 13352 Retrieved cached data for GOOGL
+INFO 2025-11-14 15:25:01,015 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:25:30,993 services 14212 13352 Retrieved cached data for GOOGL
+INFO 2025-11-14 15:25:31,008 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:26:00,993 services 14212 13352 Retrieved cached data for GOOGL
+INFO 2025-11-14 15:26:01,007 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:26:30,989 services 14212 13352 Retrieved cached data for GOOGL
+INFO 2025-11-14 15:26:31,004 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:27:00,985 services 14212 13352 Retrieved cached data for GOOGL
+INFO 2025-11-14 15:27:01,111 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:27:30,994 services 14212 13352 Retrieved cached data for GOOGL
+INFO 2025-11-14 15:27:31,264 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:28:01,692 services 14212 13352 Cached data for GOOGL
+INFO 2025-11-14 15:28:01,707 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:28:30,987 services 14212 13352 Retrieved cached data for GOOGL
+INFO 2025-11-14 15:28:31,001 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:29:00,997 services 14212 13352 Retrieved cached data for GOOGL
+INFO 2025-11-14 15:29:01,011 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:29:30,990 services 14212 13352 Retrieved cached data for GOOGL
+INFO 2025-11-14 15:29:31,002 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:30:00,995 services 14212 13352 Retrieved cached data for GOOGL
+INFO 2025-11-14 15:30:01,011 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:30:31,002 services 14212 13352 Retrieved cached data for GOOGL
+INFO 2025-11-14 15:30:31,016 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:31:00,994 services 14212 13352 Retrieved cached data for GOOGL
+INFO 2025-11-14 15:31:01,009 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:31:31,650 services 14212 13352 Retrieved cached data for GOOGL
+INFO 2025-11-14 15:31:31,667 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:32:01,652 services 14212 13352 Retrieved cached data for GOOGL
+INFO 2025-11-14 15:32:01,669 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:32:48,663 services 14212 13352 Retrieved cached data for GOOGL
+INFO 2025-11-14 15:32:48,678 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:33:49,229 services 14212 13352 Cached data for GOOGL
+INFO 2025-11-14 15:33:49,240 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:34:48,648 services 14212 13352 Retrieved cached data for GOOGL
+INFO 2025-11-14 15:34:48,670 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:35:48,659 services 14212 13352 Retrieved cached data for GOOGL
+INFO 2025-11-14 15:35:48,677 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:36:48,652 services 14212 13352 Retrieved cached data for GOOGL
+INFO 2025-11-14 15:36:48,663 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:37:48,664 services 14212 13352 Retrieved cached data for GOOGL
+INFO 2025-11-14 15:37:48,680 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:38:48,665 services 14212 13352 Retrieved cached data for GOOGL
+INFO 2025-11-14 15:38:48,679 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:39:49,246 services 14212 13352 Cached data for GOOGL
+INFO 2025-11-14 15:39:49,265 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:40:48,668 services 14212 13352 Retrieved cached data for GOOGL
+INFO 2025-11-14 15:40:48,683 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:41:48,650 services 14212 13352 Retrieved cached data for GOOGL
+INFO 2025-11-14 15:41:48,664 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:42:48,659 services 14212 13352 Retrieved cached data for GOOGL
+INFO 2025-11-14 15:42:48,670 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:43:48,653 services 14212 13352 Retrieved cached data for GOOGL
+INFO 2025-11-14 15:43:48,666 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:44:48,651 services 14212 13352 Retrieved cached data for GOOGL
+INFO 2025-11-14 15:44:48,662 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284
+INFO 2025-11-14 15:45:49,381 services 14212 13352 Cached data for GOOGL
+INFO 2025-11-14 15:45:49,396 basehttp 14212 13352 "GET /api/watchlist/update-prices/ HTTP/1.1" 200 284

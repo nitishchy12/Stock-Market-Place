@@ -1,4 +1,3 @@
-
   const API_KEY = 'd1hqgb1r01qsvr2bqhc0d1hqgb1r01qsvr2bqhcg';
   const ticker = 'AAPL';
   const socket = new WebSocket(`wss://ws.finnhub.io?token=${API_KEY}`);

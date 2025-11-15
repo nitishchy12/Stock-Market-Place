@@ -1,0 +1,11 @@
+---
+- name: Hello from Ansible
+  hosts: all
+  tasks:
+    - name: Ping all nodes
+      ping:
+
+    - name: Create a test file on each node
+      file:
+        path: /tmp/ansible_test.txt
+        state: touch

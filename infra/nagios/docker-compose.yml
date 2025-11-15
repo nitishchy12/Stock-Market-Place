@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  nagios:
+    image: jasonrivers/nagios
+    container_name: nagios-server
+    restart: always
+    ports:
+      - "8081:80"
+    volumes:
+      - nagios_config:/opt/nagios/etc
+      - nagios_plugins:/opt/nagios/libexec
+    environment:
+      - TZ=Asia/Kolkata
+
+volumes:
+  nagios_config:
+  nagios_plugins:
