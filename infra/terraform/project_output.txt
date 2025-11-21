@@ -1,2 +1,0 @@
-Project Name: Stock Market Prediction System
-Terraform Status: Infrastructure Provisioned Successfully
